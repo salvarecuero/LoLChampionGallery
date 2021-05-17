@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useEffect } from "react/cjs/react.development";
 import { ChampionContainer } from "./styles/Champion";
-import { ActivityIndicator, useWindowDimensions } from "react-native";
+import { ActivityIndicator, Dimensions } from "react-native";
 import DetailedChampion from "../components/DetailedChampion";
 
 function Champion({ route }) {
@@ -9,8 +9,8 @@ function Champion({ route }) {
   const [championData, setChampionData] = useState({});
   const [championImg, setChampionImg] = useState("");
 
-  const windowsWidth = useWindowDimensions().width;
-  const windowsHeight = useWindowDimensions().height;
+  const windowsWidth = Dimensions.get("window").width;
+  const windowsHeight = Dimensions.get("window").height;
 
   useEffect(() => {
     fetch(
