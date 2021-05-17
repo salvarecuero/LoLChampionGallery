@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "LoLChampionGallery",
+    "name": "LoL Champion Gallery",
     "slug": "LoLChampionGallery",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -17,9 +17,11 @@
       "**/*"
     ],
     "ios": {
+      "bundleIdentifier": "com.example.lolChampionGallery",
       "supportsTablet": true
     },
     "android": {
+      "package": "com.example.lol_champion_gallery",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
@@ -27,6 +29,7 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": ""
   }
 }
